@@ -23,13 +23,10 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
   <script src="js/app.js"></script>
 
   <header>
     <h1>Despliegue de aplicaciones web</h1>
-    <!-- Background image would be added via CSS -->
 </header>
 <nav>
   <ul>
@@ -42,7 +39,7 @@
   
   <main>
       <section id="home">
-        <h1>Git: Sistema de Control de Versiones Distribuido</h1>
+        <h2>Git: Sistema de Control de Versiones Distribuido</h2>
         <p>Git es un sistema de control de versiones distribuido utilizado en el desarrollo de software. Fue creado en 2005 por Linus Torvalds y se ha convertido en una herramienta fundamental para los desarrolladores de software.</p>
 
         <p>Ofrece una serie de funcionalidades importantes:</p>
@@ -80,7 +77,7 @@
       </section>
 
       <section id="modificarContenidoHtml">
-        <h1>Modificar contenido HTML</h1>
+        <h2>Modificar contenido HTML</h2>
         <br/>
         <p>
           El código HTML de esta sección muestra un párrafo con el texto "Cambiar el contenido de HTML desde Javascript." y un botón "Mostrar hola mundo". 
@@ -95,8 +92,24 @@
         </button>
       </section>
 
+      <section id="ModificarEstilosCss">
+        <h2>Modificar estilos CSS</h2>
+        <br/>
+        <p>
+          El código HTML de esta sección muestra un párrafo con el texto "Cambiar el estilo de este párrafo desde Javascript." y un botón "Cambiar estilo". 
+          Al hacer clic en el botón, se activa un evento onclick que ejecuta un script de JavaScript. 
+          Este script utiliza document.getElementById("demo2") para encontrar el párrafo y luego cambia varios de sus estilos CSS, como el color de fondo y el color del texto. 
+          Esto ilustra cómo JavaScript puede ser usado para modificar dinámicamente los estilos CSS de los elementos en una página web.
+        </p>
+        <br/>
+        <p id="demo2" style="padding: 10px; border: 1px solid black; margin-bottom: 2vh;">Cambiar el estilo de este párrafo desde Javascript.</p>
+        <button type="button" onclick='document.getElementById("demo2").style.background = "lightgray"'>
+            Cambiar estilo
+        </button>
+      </section>
+
       <section id="ModificarAtributosHtml">
-        <h1>Modificar Atributos HTML</h1>
+        <h2>Modificar Atributos HTML</h2>
         <br/>
         <p>
           El código HTML de esta sección muestra un párrafo con el texto "Cambiar el atributo color desde Javascript." y un botón "Cambiar color a rojo". 
