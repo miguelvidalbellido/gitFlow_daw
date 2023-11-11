@@ -78,6 +78,38 @@
           <img src="https://nodd3r.com/media/blog/Portadas_blog_21.png">
         </div>
       </section>
+
+      <section id="modificarContenidoHtml">
+        <h1>Modificar contenido HTML</h1>
+        <br/>
+        <p>
+          El código HTML de esta sección muestra un párrafo con el texto "Cambiar el contenido de HTML desde Javascript." y un botón "Mostrar hola mundo". 
+          Al hacer clic en el botón, se activa un evento onclick que ejecuta un script de JavaScript. 
+          Este script utiliza document.getElementById("demo") para encontrar el párrafo y luego cambia su contenido interno (innerHTML) a "Hola mundo desde Javascript". 
+          Esto ilustra cómo JavaScript puede ser usado para modificar dinámicamente el contenido de una página web.
+        </p>
+        <br/>
+        <p id="demo">Cambiar el contenido de HTML desde Javascript.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hola mundo desde Javascript"'>
+          Mostrar hola mundo
+        </button>
+      </section>
+
+      <section id="ModificarAtributosHtml">
+        <h1>Modificar Atributos HTML</h1>
+        <br/>
+        <p>
+          El código HTML de esta sección muestra un párrafo con el texto "Cambiar el atributo color desde Javascript." y un botón "Cambiar color a rojo". 
+          Al hacer clic en el botón, se activa un evento onclick que ejecuta un script de JavaScript. 
+          Este script utiliza document.getElementById("demo1") para encontrar el párrafo y luego cambia su atributo color a "red". 
+          Esto ilustra cómo JavaScript puede ser usado para modificar dinámicamente los atributos de una página web.
+        <br/>
+        <p id="demo1" style="color:blue;">Cambiar el atributo color desde Javascript.</p>
+        <button type="button" onclick='document.getElementById("demo1").style.color = "red"'>
+          Cambiar color a rojo
+        </button>
+      </section>
+
   </main>
 
   <footer>
