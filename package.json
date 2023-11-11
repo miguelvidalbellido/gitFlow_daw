@@ -12,10 +12,13 @@
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "webpack --config webpack.config.prod.js",
+    "lint": "eslint *.html"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-html": "^7.1.0",
     "html-webpack-plugin": "^5.5.3",
     "husky": "^8.0.3",
     "webpack": "^5.89.0",
