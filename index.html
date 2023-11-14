@@ -1,134 +1,564 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <script src="js/app.js"></script>
-
-  <header>
-    <h1>Despliegue de aplicaciones web</h1>
-</header>
-<nav>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#modificarContenidoHtml">Modificar contenido HTML</a></li>
-    <li><a href="#ModificarEstilosCss">Modificar estilos CSS</a></li>
-    <li><a href="#ModificarAtributosHtml">Modificar atributos HTML</a></li>
-  </ul> 
-  </nav>
-  
-  <main>
-      <section id="home">
-        <h2>Git: Sistema de Control de Versiones Distribuido</h2>
-        <p>Git es un sistema de control de versiones distribuido utilizado en el desarrollo de software. Fue creado en 2005 por Linus Torvalds y se ha convertido en una herramienta fundamental para los desarrolladores de software.</p>
-
-        <p>Ofrece una serie de funcionalidades importantes:</p>
-        <ul>
-          <li>Seguimiento de cambios en el código.</li>
-          <li>Colaboración entre equipos.</li>
-          <li>Gestión de versiones y ramificaciones.</li>
-          <li>Otras funcionalidades clave.</li>
-        </ul>
-
-        <h2>Metodología Git Flow</h2>
-        <p>La metodología Git Flow ofrece un enfoque de organización y flujo de trabajo basado en la gestión de ramas específicas para diferentes fases del desarrollo:</p>
-
-        <h3>Ramas Específicas:</h3>
-        <ul>
-          <li><strong>Rama Master:</strong> Contiene el código estable y probado. Se fusionan las funcionalidades completadas o errores solucionados en esta rama.</li>
-          <li><strong>Rama Develop:</strong> Rama principal del desarrollo. Contiene el código en progreso y se deriva en la rama master.</li>
-          <li><strong>Ramas de Funcionalidades (Features):</strong> Se derivan de la rama de desarrollo para implementar nuevas funcionalidades. Al completarse, se fusionan con la rama de desarrollo.</li>
-          <li><strong>Ramas de Lanzamiento (Release):</strong> Preparan el código para el lanzamiento de nuevas versiones, realizando pruebas finales y correcciones antes de la fusión con la rama master.</li>
-          <li><strong>Ramas de Corrección (Hotfix):</strong> Utilizadas para solucionar problemas críticos en producción. Se derivan de la rama master y se fusionan de nuevo en la rama master y develop tras la corrección.</li>
-        </ul>
-
-        <h3>Beneficios de esta Metodología:</h3>
-        <ul>
-          <li>Organización clara para el desarrollo y colaboración entre equipos.</li>
-          <li>Seguimiento eficiente de cambios en el código.</li>
-          <li>Gestión de versiones estables para producción.</li>
-          <li>Facilita la implementación de nuevas características de manera controlada.</li>
-          <li>Permite trabajo simultáneo de varios desarrolladores manteniendo un flujo estructurado.</li>
-        </ul>
-        <div class="images_home">
-          <img src="https://miro.medium.com/v2/resize:fit:658/1*ez3-pv7NA9svbCr7MIJ4tQ.jpeg">
-          <img src="https://nodd3r.com/media/blog/Portadas_blog_21.png">
-        </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentación</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="lateralNav">
+      <a href="#header">Inicio</a>
+      <a href="#enunciado">Enunciado</a>
+      <a href="#user1">Usuario 1</a>
+      <a href="#user2">Usuario 2</a>
+      <a href="#user1final">Usuario 1 Final</a>
+    </div>
+    <div class="main">
+      <section class="header" id="header">
+        <h1>Documentación de la práctica</h1>
+        <img
+          src="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+          alt="imagen titulo"
+        />
+        <p>Desarrollado por: Miguel Vidal Bellido</p>
       </section>
+      <div class="separation">
 
-      <section id="modificarContenidoHtml">
-        <h2>Modificar contenido HTML</h2>
-        <br/>
+      </div>
+      <section class="sectionOfContent" id="enunciado">
+        <h2>Enunciado</h2>
         <p>
-          El código HTML de esta sección muestra un párrafo con el texto "Cambiar el contenido de HTML desde Javascript." y un botón "Mostrar hola mundo". 
-          Al hacer clic en el botón, se activa un evento onclick que ejecuta un script de JavaScript. 
-          Este script utiliza document.getElementById("demo") para encontrar el párrafo y luego cambia su contenido interno (innerHTML) a "Hola mundo desde Javascript". 
-          Esto ilustra cómo JavaScript puede ser usado para modificar dinámicamente el contenido de una página web.
+          Un cliente encargado de realizar formaciones a empresas ha decidido
+          crear un curso nuevo para poder enseñar javascript aplicado a
+          interacciones con elementos HTML. Para ello, nos ha pedido que
+          implementemos una pequeña página web en la que mostremos algunos
+          ejemplos en los que se utilice este lenguaje de programación. Su idea
+          es que el producto final tenga un aspecto similar al siguiente
+          esquema:
         </p>
-        <br/>
-        <p id="demo">Cambiar el contenido de HTML desde Javascript.</p>
-        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hola mundo desde Javascript"'>
-          Mostrar hola mundo
-        </button>
-      </section>
-
-      <section id="ModificarEstilosCss">
-        <h2>Modificar estilos CSS</h2>
-        <br/>
         <p>
-          El código HTML de esta sección muestra un párrafo con el texto "Cambiar el estilo de este párrafo desde Javascript." y un botón "Cambiar estilo". 
-          Al hacer clic en el botón, se activa un evento onclick que ejecuta un script de JavaScript. 
-          Este script utiliza document.getElementById("demo2") para encontrar el párrafo y luego cambia varios de sus estilos CSS, como el color de fondo y el color del texto. 
-          Esto ilustra cómo JavaScript puede ser usado para modificar dinámicamente los estilos CSS de los elementos en una página web.
+          Nuestro equipo de programadores está compuesto por 3 personas. Por
+          este motivo, hemos decidido dividir el trabajo de la siguiente forma:
         </p>
-        <br/>
-        <p id="demo2" style="padding: 10px; border: 1px solid black; margin-bottom: 2vh;">Cambiar el estilo de este párrafo desde Javascript.</p>
-        <button type="button" onclick='document.getElementById("demo2").style.background = "lightgray"'>
-            Cambiar estilo
-        </button>
-      </section>
-
-      <section id="ModificarAtributosHtml">
-        <h2>Modificar Atributos HTML</h2>
-        <br/>
         <p>
-          El código HTML de esta sección muestra un párrafo con el texto "Cambiar el atributo color desde Javascript." y un botón "Cambiar color a rojo". 
-          Al hacer clic en el botón, se activa un evento onclick que ejecuta un script de JavaScript. 
-          Este script utiliza document.getElementById("demo1") para encontrar el párrafo y luego cambia su atributo color a "red". 
-          Esto ilustra cómo JavaScript puede ser usado para modificar dinámicamente los atributos de una página web.
-        <br/>
-        <p id="demo1" style="color:blue;">Cambiar el atributo color desde Javascript.</p>
-        <button type="button" onclick='document.getElementById("demo1").style.color = "red"'>
-          Cambiar color a rojo
-        </button>
+          El usuario 1 que es el más experimentado, se encargará de crear el
+          repositorio del proyecto e implementará la estructura inicial de la
+          página en la que incluirá la cabecera, la barra de navegación con el
+          acceso a Home y el footer de la página. En la parte central del home
+          incluirá una breve descripción del curso.
+        </p>
+        <p>
+          El usuario 2 creará la sección de “Modificar contenido HTML” en el que
+          incluirá algún ejemplo similar al que existe en el siguiente enlace
+          así como una explicación de dicho código. También desarrollará la
+          sección “Modificar atributos HTML”
+        </p>
+        <p>
+          El usuario 3 que acaba de llegar a la empresa implementará la sección
+          “Modificar estilos CSS” de la misma forma que ha hecho el usuario 2.
+          Añadirá ejemplos similares a este (comentando el código).
+        </p>
+        <p>
+          Además, debido a la complejidad del proyecto, se ha decidido seguir la
+          metodología Git Flow para poder realizar el desarrollo.
+        </p>
+        <p>
+          Así pues, nuestra tarea consistirá en crear un repositorio en GitHub
+          en el que simulemos toda la implementación acordada además de
+          documentar todo el proceso correctamente para que nuestro cliente vea
+          que somos una empresa seria y trabajamos siguiendo una metodología
+          (esto incluye mensajes de commit siguiendo las buenas prácticas vistas
+          en clase). Esta documentación, deberá estar incluida en el GitHub
+          Pages del propio repositorio del proyecto y deberá contener:
+        </p>
+
+        <p>
+          Una introducción teórica de qué es Git, la metodología Git Flow y por
+          qué la utilizamos en nuestro desarrollo. (0,75 puntos)
+        </p>
+
+        <p>
+          Git es un sistema de control de versiones distribuido utilizado en el
+          desarrollo de software. Fue creado el año 2005 por Linus Torvalds y se
+          ha convertido en una herramienta fundamental para los desarrolladores
+          de software ya que permite mantener un seguimiento de los cambios
+          realizados en el código, permite colaborar entre equipos y sobre todo
+          tener una gestión de versiones y ramificaciones, entre muchas otras
+          funcionalidades.
+        </p>
+
+        <p>
+          La metodología Git Flow ofrece un enfoque de organización y flujo de
+          trabajo basado en la gestión de ramas específicas para diferentes
+          fases del desarrollo. Se basa en el uso de las siguientes ramas
+          específicas para cada propósito:
+        </p>
+
+        <ul>
+          <li>
+            Rama Master → Contiene el código que ha sido probado y es estable,
+            siempre que se complete una funcionalidad o se soluciona un error se
+            fusiona en esta rama.
+          </li>
+          <li>
+            Rama Develop → Es la rama principal del desarrollo. Contiene el
+            código en desarrollo y se derivará en la rama master.
+          </li>
+          <li>
+            Features Branchs → Cuando se implementa una nueva funcionalidad se
+            desarrolla en una rama separada, derivada de la rama de desarrollo.
+            Cuando se complete el desarrollo de la funcionalidad, se fusiona con
+            la rama de desarrollo.
+          </li>
+          <li>
+            Release Branches → Se crean cuando se planea una nueva versión para
+            producción. La finalidad de estas ramas es preparar el código para
+            el lanzamiento. Se realizan pruebas finales y correcciones en esta
+            rama antes de ser fusionada con la rama master.
+          </li>
+          <li>
+            Hotfix Branches → Se utilizan para corregir ciertos problemas
+            críticos en producción. Se derivan a partir de la rama master y
+            cuando el error es solucionado se fusiona de nuevo en la rama master
+            y develop.
+          </li>
+        </ul>
+
+        <p>Se utiliza esta metodología en el desarrollo por varias razones:</p>
+
+        <ul>
+          <li>
+            Organización clara → Ofrece una estructura clara para el desarrollo,
+            ya que separa las fases del proceso y facilita la colaboración entre
+            equipos.
+          </li>
+          <li>
+            Seguimiento de cambios → Permite realizar un seguimiento eficiente
+            de las modificaciones que se llevan a cabo en el código, lo que
+            facilita la identificación de errores y la reversión a versiones
+            anteriores si fuera necesario.
+          </li>
+          <li>
+            Gestión de versiones → Facilita la gestión de versiones estables
+            para producción, además de facilitar la implementación de nuevas
+            características de manera controlada y ordenada.
+          </li>
+          <li>
+            Facilita la colaboración → Permite que varios desarrolladores
+            trabajen implementando características diferentes de forma
+            simultánea, manteniendo un flujo de trabajo estructurado y evitando
+            conflictos en el código base.
+          </li>
+        </ul>
       </section>
+      <div class="separation">
 
-  </main>
+      </div>
+      <section class="sectionOfContent" id="user1">
+        <h2>USUARIO 1</h2>
+        <p class="statement">
+          El usuario 1 que es el más experimentado, se encargará de crear el
+          repositorio del proyecto, adecuará este para poder utilizar la
+          metodología git flow (creación de ramas iniciales), e implementará la
+          estructura inicial del proyecto utilizando el siguiente boilerplate
+          (link). Esta página inicial incluirá la cabecera, la barra de
+          navegación con el acceso a Home y el footer de la página.
+        </p>
+        <p>En la esquina superior derecha realizamos clic en el botón New.</p>
+        <img src="imgs/1.png" alt="" />
 
-  <footer>
-      <p>Footer proyectoGitFlow DAW</p>
-  </footer>
+        <p>
+          En la página "Create a new repository", introducimos gitFlow_daw.
+          Decidimos si el repositorio será público o privado. En nuestro caso
+          público.
+        </p>
+        <img src="imgs/2.png" alt="" />
 
-</body>
+        <p>
+          Finalmente, hacemos clic en el botón Create repository. Con esto,
+          nuestro repositorio gitFlow_daw estará creado y listo para ser
+          utilizado.
+        </p>
+        <p><strong>Clonamos el repositorio.</strong></p>
+        <p>
+          Utilizamos el comando git clone [URL del repo]. Podemos observar como
+          nos avisa de que hay un warning, debido a que no encuentra archivos
+          dentro del repositorio.
+        </p>
+        <img src="imgs/3.png" alt="" />
 
+        <p><strong>Instalación de Git Flow</strong></p>
+        <p>
+          En nuestra terminal comprobamos si Git Flow está instalado con el
+          comando git flow versión. Si no lo tenemos instalado, lo instalamos
+          con el siguiente comando sudo apt install git-flow.
+        </p>
+        <img src="imgs/4.png" alt="" />
+
+        <p><strong>Inicialización de Git Flow</strong></p>
+        <p>
+          Ejecutamos el comando git flow init y creamos las ramas que sean
+          necesarias para nuestro proyecto, es recomendable crearlas todas.
+        </p>
+        <img src="imgs/5.png" alt="" />
+
+        <p>
+          <strong
+            >Crear la estructura inicial del proyecto utilizando
+            boilerplate.</strong
+          >
+        </p>
+        <p>
+          Accedemos al link del enunciado y seleccionamos el enlace del Readme
+          Template, realizamos clic y seleccionamos clic sobre la opción de
+          copiar la URL del repositorio.
+        </p>
+        <img src="imgs/6.png" alt="" />
+
+        <p>
+          Clonamos el repositorio anterior en un directorio fuera de donde
+          tenemos clonado nuestro repositorio. Para ello utilizamos el comando
+          git clone [URL del repo].
+        </p>
+        <img src="imgs/7.png" alt="" />
+        <p>
+          Una vez tenemos clonado el repositorio, vamos a añadir los datos a
+          nuestro proyecto. Para ello nos situamos en la raiz y ejecutamos el
+          comando cp -a /repo_copiado/. /nuestro_repo/ . Indicamos el asterisco
+          para evitar que se copien los archivos ocultos.
+        </p>
+        <img src="imgs/8.png" alt="" />
+
+        <p>
+          Comprobamos que la operación de copiar archivos se ha realizado
+          correctamente con el comando ls -la .
+        </p>
+        <p>
+          Modificamos el archivo index.html y style.css, en ellos añadimos el
+          codigo html y css correspondiente.
+        </p>
+        <p>Ejecutamos el comando npm i para instalar las dependencias.</p>
+        <img src="imgs/9.png" alt="" />
+
+        <p>
+          Seguidamente ejecutamos el comando npm run start para comprobar el
+          resultado de nuestro código añadido
+        </p>
+        <img src="imgs/10.png" alt="" />
+
+        <p>Comprobamos el resultado.</p>
+        <img src="imgs/11.png" alt="" />
+
+        <p>
+          <strong
+            >Además, el usuario 1 que quiere que todo funcione correctamente,
+            creará dos hooks (utilizando la librería husky) para el proyecto y
+            que harán lo siguiente:</strong
+          >
+        </p>
+        <p><strong>Preparación del entorno para configurar husky.</strong></p>
+        <p>
+          Instalamos husky en nuestro proyecto, con el comando npm install
+          husky–save-dev.
+        </p>
+        <img src="imgs/12.png" alt="" />
+
+        <p>
+          Una vez que Husky esté instalado, debemos ejecutar el script prepare
+          en nuestro archivo package.json. Este script instalará Husky y creará
+          un directorio llamado .husky en tu proyecto
+        </p>
+        <img src="imgs/13.png" alt="" />
+        <img src="imgs/14.png" alt="" />
+
+        <p>
+          Comprobamos que se ha creado un nuevo directorio llamado .husky en la
+          raiz de nuestro proyecto
+        </p>
+        <img src="imgs/15.png" alt="" />
+
+        <p>
+          <strong
+            >El primero comprobará que siempre que se realice un commit en la
+            rama hotfix exista una persona asignada para verificar que no se
+            rompe nada. Para ello, deberá comprobar que el mensaje de commit
+            contiene la frase “A corregir por: …” (0,75 puntos)</strong
+          >
+        </p>
+        <p>Accedemos al directorio ./husky, y creamos un archivo commit-msg.</p>
+        <img src="imgs/16.png" alt="" />
+
+        <p>Este debe ser el resultado.</p>
+        <img src="imgs/17.png" alt="" />
+
+        <p>Le otorgamos permiso de ejecución.</p>
+        <img src="imgs/18.png" alt="" />
+
+        <p>
+          Accedemos al archivo y añadimos el siguiente código al archivo para
+          que se dispare siempre que detecte que se está intentando realizar un
+          commit en la rama hotfix.
+        </p>
+        <img src="imgs/19.png" alt="" />
+
+        <p>
+          <strong
+            >El segundo simplemente mostrará en consola un mensaje con un dibujo
+            hecho con caracteres ascii una vez hagamos el checkout de una rama
+            del proyecto. Podéis coger ejemplos de esta página. (0,5
+            puntos)</strong
+          >
+        </p>
+        <p>Creamos el archivo post-checkout dentro del directorio .husky .</p>
+        <img src="imgs/20.png" alt="" />
+
+        <p>Le otorgamos permisos al archivo.</p>
+        <img src="imgs/21.png" alt="" />
+
+        <p>Añadimos el siguiente código al archivo.</p>
+        <img src="imgs/22.png" alt="" />
+
+        <p>
+          Una vez finalizado todo el proceso, el usuario 1 realiza un commit a
+          la rama develop. Para ello ejecutamos el comando git add . , git
+          commit -m “[Usuario 1 - msg]” y finalmente ejecuta la instrucción git
+          push origin develop para subir los cambios al repositorio remoto.
+        </p>
+        <img src="imgs/23.png" alt="" />
+        <img src="imgs/24.png" alt="" />
+
+        <p>Comprobamos que se ha realizado de forma exitosa en Github.</p>
+        <img src="imgs/25.png" alt="" />
+      </section>
+      <div class="separation">
+
+      </div>
+      <section class="sectionOfContent" id="user2">
+        <h2>USUARIO 2</h2>
+        <p>
+          <strong>
+            El usuario 2 *, crea dos features (feature/contenidoHTML y
+            feature/atributosHTML, una por cada sección que debe implementar).
+            Además, añadirá el siguiente hook (1 punto):
+          </strong>
+        </p>
+        <p>
+          <strong>
+            Creación de Ramas de Features e implementación del código necesario.
+          </strong>
+        </p>
+        <p>
+          Accedemos a la terminal y ejecutamos el comando git checkout -b
+          feature/contenidoHTML.
+        </p>
+        <img src="imgs/26.png" alt="" />
+
+        <p>
+          Modificamos el archivo index.html e implementamos el código necesario,
+          este es el resultado.
+        </p>
+        <img src="imgs/27.png" alt="" />
+
+        <p>
+          Accedemos a la terminal y ejecutamos el comando git checkout -b
+          feature/atributosHTML.
+        </p>
+        <img src="imgs/28.png" alt="" />
+
+        <p>
+          Modificamos el archivo index.html e implementamos el código necesario,
+          este es el resultado
+        </p>
+        <img src="imgs/29.png" alt="" />
+
+        <p>
+          <strong>
+            Previo a realizar el commit, se verificará el correcto formato en
+            los ficheros html. Para ello, se ejecutará el linter eslint
+            utilizando el siguiente plugin (link) (0,5 puntos).
+          </strong>
+        </p>
+        <p>
+          Instalamos eslint-plugin-html, para ello ejecutamos el siguiente
+          comando:
+        </p>
+        <img src="imgs/30.png" alt="" />
+
+        <p>
+          Creamos el archivo de configuración en la raiz de nuestro directorio,
+          ha de llamarse .eslintrc.json .
+        </p>
+        <p>
+          Ejecutamos el comando npm init @eslint/config, para crear el fichero
+          de configuración.
+        </p>
+        <img src="imgs/31.png" alt="" />
+
+        <p>
+          Accedemos a nuestro package.json y añadimos un script para ejecutar
+          ESLint en nuestros archivos html.
+        </p>
+        <img src="imgs/32.png" alt="" />
+
+        <p>
+          Añadimos el hook de pre-commit con el siguiente comando npx husky add
+          .husky/pre-commit "npm run lint":
+        </p>
+        <img src="imgs/33.png" alt="" />
+
+        <p>
+          Se nos creará el archivo dentro de .husky con la siguiente
+          información.
+        </p>
+        <img src="imgs/34.png" alt="" />
+
+        <p>Realizamos dos commits uno por cada rama.</p>
+        <p>
+          Primeramente la rama Feature/AtributosHtml, comprobamos que se ha
+          ejecutado eslint correctamente.
+        </p>
+        <img src="imgs/35.png" alt="" />
+        <img src="imgs/36.png" alt="" />
+
+        <p>
+          Finalmente realizamos el mismo proceso en la rama
+          Feature/atributosHtml.
+        </p>
+        <img src="imgs/37.png" alt="" />
+
+        <p>Comprobamos en el servidor que se han realizado de forma exitosa.</p>
+        <img src="imgs/38.png" alt="" />
+
+        <p><strong> Realizamos el merge con la rama develop. </strong></p>
+
+        <p>
+          Accedemos a nuestro github y creamos dos pull request (una para cada
+          rama feature) para unificar los cambios realizados por el usuario 2.
+        </p>
+        <img src="imgs/39.png" alt="" />
+
+        <p>Comprobamos que todo ha salido bien.</p>
+        <img src="imgs/40.png" alt="" />
+      </section>
+      <div class="separation">
+
+      </div>
+      <section class="sectionOfContent" id="user3">
+        <h2>USUARIO 3</h2>
+        <p>
+          <strong>
+            El usuario 3 *, crea una feature (feature/estilosCSS) asociada al
+            cambio para añadir su sección. El usuario 3, además, crea una nueva
+            release con todas las features que etiqueta como v1.0. (2 puntos)
+          </strong>
+        </p>
+        <p>
+          Cambiamos a la rama develop y ejecutamos el comando git pull origin
+          develop para obtener las últimas modificaciones del proyecto.
+        </p>
+        <img src="imgs/41.png" alt="" />
+
+        <p>
+          Creamos la nueva rama de características llamada feature/estilosCSS
+          con el comando git checkout -b.
+        </p>
+        <img src="imgs/42.png" alt="" />
+
+        <p>
+          Accedemos al archivo css/styles.css y añadimos el código que deseamos,
+          en nuestro caso el código css añadido le da estilos a los botones.
+          Este es el resultado.
+        </p>
+        <img src="imgs/43.png" alt="" />
+
+        <p>
+          Creamos un commit con los nuevos cambios y realizamos el push al
+          repositorio remoto en Github.
+        </p>
+        <img src="imgs/44.png" alt="" />
+
+        <p>Cambiamos a la rama develop, git checkout develop.</p>
+        <img src="imgs/45.png" alt="" />
+
+        <p>
+          Comenzamos el proceso de release con Git Flow, lo que creará una rama
+          de release a partir de develop:
+        </p>
+        <img src="imgs/46.png" alt="" />
+        <img src="imgs/47.png" alt="" />
+
+        <p>
+          Comprobamos que la rama develop esta actualizada y obtenemos los
+          cambios que se han realizado en la rama feature/estilosCSS.
+        </p>
+        <img src="imgs/48.png" alt="" />
+
+        <p>Realizamos un commit de los cambios.</p>
+        <img src="imgs/49.png" alt="" />
+
+        <p>Finalmente terminamos la release git flow release finish 'v1.0' .</p>
+        <img src="imgs/50.png" alt="" />
+
+        <p>Añadimos un mensaje.</p>
+        <img src="imgs/51.png" alt="" />
+
+        <p>Subimos los cambios</p>
+        <img src="imgs/52.png" alt="" />
+        <img src="imgs/53.png" alt="" />
+        <img src="imgs/54.png" alt="" />
+      </section>
+      <div class="separation">
+
+      </div>
+      <section class="sectionOfContent" id="user1final">
+        <h2>USUARIO 1 FINAL</h2>
+        <p>
+          <strong>
+            El usuario 1 * que se encarga de las pruebas, decide mejorar un poco
+            la sección del contenido creada por el usuario 2. Para ello, crea un
+            hotfix (hotfix/mejorasV_1_0) que efectúa dicha mejora. (1,5 puntos)
+          </strong>
+        </p>
+        <p>
+          Como el usuario 3 también tenía fallos se va a mejorar las secciones
+          tanto del usuario 2 como del 3.
+        </p>
+        <p>
+          Para ello nos situamos en la rama develop desde nuestra terminal. Una
+          vez alli ejecutamos el comando git flow hotfix finish mejorasV_1_0.
+        </p>
+        <img src="imgs/55.png" alt="" />
+        <img src="imgs/56.png" alt="" />
+
+        <p>
+          Modificamos los archivos html y css necesarios y ejecutamos el comando
+          git add . para añadir los cambios y realizamos el commit con la
+          estructura correcta.
+        </p>
+        <img src="imgs/57.png" alt="" />
+
+        <p>
+          Utilizamos Git Flow para cerrar los cambios y ejecutamos el comando
+          git flow hotfix finish mejorasV_1_0.
+        </p>
+        <img src="imgs/58.png" alt="" />
+
+        <p>Añadimos un comentario del proceso que se ha realizado.</p>
+        <img src="imgs/59.png" alt="" />
+
+        <p>
+          Finalmente subimos los cambios a master, develop y subimos los tags al
+          servidor remoto.
+        </p>
+        <img src="imgs/60.png" alt="" />
+        <img src="imgs/61.png" alt="" />
+        <img src="imgs/62.png" alt="" />
+
+        <p>
+          Accedemos a nuestro repositorio remoto en Github y comprobamos que se
+          ha realizado de forma correcta.
+        </p>
+        <img src="imgs/63.png" alt="" />
+      </section>
+    </div>
+  </body>
 </html>
